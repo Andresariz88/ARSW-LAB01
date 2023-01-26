@@ -25,7 +25,4 @@ public class CountThread implements Runnable {
         }
     }
 
-    public static void main(String[] args) {
-
-    }
 }
