@@ -15,12 +15,8 @@ public class PiDigitsMain {
         for (int i = 0; i < n; i++) {
             Thread t;
             if (i == n-1) {
-                System.out.println("START_: " + (i*(range/n) + start));
-                System.out.println("COUNT_ : " + ((range/n) + (range%n)));
                 t = new Thread(new PiDigits((i*(range/n) + start), (range/n) + (range%n)));
             } else {
-                System.out.println("START: " + (i*(range/n) + start));
-                System.out.println("COUNT : " + range/n);
                 t = new Thread(new PiDigits((i*(range/n) + start), range/n));
             }
             threads.add(t);
