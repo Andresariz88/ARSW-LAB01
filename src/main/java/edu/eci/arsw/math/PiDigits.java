@@ -20,6 +20,7 @@ public class PiDigits implements Runnable{
 
     @Override
     public void run() {
+        //System.out.println("Iniciando hilo!");
         System.out.print(bytesToHex(getDigits(start, count)));
     }
     
